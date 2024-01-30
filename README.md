@@ -39,7 +39,7 @@ You can choose to use your existing SaaS registration page, after collecting the
 
 In this sample we created CloudFront Distribution, which can be configured to use domain/CNAME by your choice. 
 AWS initial request processed by https://microservices.archilogic.com/auth/signup-marketplace
-The handler for the marketplace/customer creation is defined in the microservices/apps/auth lambda, where we call the `resolveCustomer` and validate the token. If the token is valid the customer record is created in the `AWSMarketplaceSubscribers` DynamoDB table and the new customer data are stored.
+The handler for the marketplace/customer creation is defined in the `microservices/apps/auth` lambda, where we call the `resolveCustomer` and validate the token. If the token is valid the customer record is created in the `AWSMarketplaceSubscribers` DynamoDB table and the new customer data are stored.
 
 ![](misc/Onbording-CF.png)
 
